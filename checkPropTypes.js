@@ -51,6 +51,8 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
           warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '');
         }
+
+        return error
       }
     }
   }
