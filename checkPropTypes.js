@@ -9,7 +9,7 @@
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = require('fbjs/lib/invariant');
-  var warning = require('fbjs/lib/warning');
+  var warning = () => {} // require('fbjs/lib/warning');
   var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
   var loggedTypeFailures = {};
 }
